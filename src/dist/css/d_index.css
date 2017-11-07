@@ -37,7 +37,7 @@ body {
     font-size: 0.625rem;
     font-family: "Microsoft Yahei", Arial, sans-serif;
     text-align: center;
-    padding-top: 0.2rem;
+    padding-top: 0.35rem;
     box-sizing: border-box;
 }
 .in_header_time .time_con_red {
@@ -49,7 +49,7 @@ body {
     background-size: 100%;
     font-size: 0.625rem;
     font-family: "Microsoft Yahei", Arial, sans-serif;
-    padding-top: 0.2rem;
+    padding-top: 0.35rem;
     box-sizing: border-box;
 }
 .time_con_mr {
