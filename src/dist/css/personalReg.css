@@ -1,0 +1,158 @@
+body {
+    background-color: #f6f6f6;
+}
+
+.per-header {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    color: #ff4063;
+    height: 75px;
+    line-height: 75px;
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.per-header-center div{
+    display: inline-block;
+}
+
+/*短信验证*/
+.per-phone-check {
+    position: relative;
+}
+.per-phone-check input{
+    width: 100%;
+    height: 54px;
+    margin-bottom: 1rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.per-phone-check  .per-time {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding-left: 1rem;
+    border-left:1px solid  #ccc;
+    color: #3faafa;
+}
+
+/*input password*/
+.per-password input{
+    border: none;
+    height: 54px;
+    width: 100%;
+    padding-left: 4.75rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #f9f9f9;
+    border-left: 1px solid #f9f9f9;
+}
+
+.per-password .per-word {
+    position: relative;
+}
+
+.per-word img {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    width: 4.5%;
+}
+/*input password end*/
+
+.per-radio {
+    width: 100%;
+}
+
+
+/*radio*/
+.per-radio {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.per-radio ul {
+    display: flex;
+    text-align: center;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+.per-radio ul li {
+    text-align: center;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    flex-grow: 1;
+}
+.per-radio input[type="radio"] {
+    visibility: hidden;
+}
+
+.per-radio .radio{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 7px 0 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.per-radio .first .radio {
+     margin-left: 1rem;
+}
+.per-radio .second .radio {
+    margin-left: -4rem;
+}
+
+.per-radio li .first{
+    margin-left: 2rem;
+}
+
+.radio i {
+    position: absolute;
+    left: 5px;
+    width: 16px;
+    /*height: 16px;*/
+    opacity: .5;
+    transition: all 400ms ease-in-out;
+}
+
+.per-radio .text {
+    position: relative;
+    display: inline-block;
+    bottom: 0.44rem;
+}
+
+.per-radio .checkedRadio {
+    background: url(../../dist/img/radio/radio_mark.png) no-repeat center center;
+    background-size: 100%;
+}
+/*radio end*/
+
+/*按钮*/
+.pre-reg-button {
+    width: 80%;
+    height: 50px;
+    background-color: #fe4365;
+    margin: 0 auto;
+    color: #ffffff;
+    display: block;
+    border-radius: 0.325rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.pre-button .pre-pro {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+}
+
+.pre-button .pre-pro a {
+    color: #c9c9c9;
+}

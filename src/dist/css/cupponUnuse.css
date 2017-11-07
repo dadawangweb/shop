@@ -1,0 +1,80 @@
+.cuppon-unuse {
+    width: 95%;
+    margin-top: 5%;
+    overflow: hidden;zoom: 1;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.sections {
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 37px;
+    bottom: 0;
+    width: 100%;
+}
+.cuppon-unuse img {
+    width: 37%;
+    float: left;
+}
+
+.cuppon-unuse-left {
+    position: absolute;
+    color: #ffffff;
+    left: 6%;
+    top: 10%;
+}
+
+.cuppon-unuse-left .number{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.cuppon-unuse-left .kuohao {
+    font-size: 0.625rem;
+}
+
+.cuppon-unuse-right {
+    width: 60%;
+    float: right;
+    position: relative;
+    border-bottom: 1px dashed #cecece;
+}
+.cuppon-unuse-right .cuppon-unuse-right-top{
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.75rem;
+    margin-top: 2%;
+    color: #959595;
+}
+.cuppon-unuse-right  .cuppon-unuse-right-bot {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 12px;
+    /*font-size: 0.56rem;*/
+    /*-webkit-transform:scale(0.7);*/
+    /*-moz-transform:scale(0.73);*/
+    /*margin-left: -33px;*/
+    color: #cecece;
+    margin-top: 2.5%;
+}
+
+.cuppon-unuse-right .nouse {
+    height: 100px;
+    width: 100%;!important;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+}
+
+.unuser-button {
+    width: 30%;
+    display: inline-block;
+    height: 17px;
+    border: 1px solid #c4c4c4;
+    font-size: 0.75rem;
+    color: #c4c4c4;
+    border-radius: 0.5rem;
+    text-align: center;
+    position: absolute;
+    right: 2%;
+    margin-top: 6px;
+}

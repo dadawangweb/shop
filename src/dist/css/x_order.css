@@ -1,0 +1,130 @@
+
+
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+  cursor:pointer;
+
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.shopcar-map{
+  width:40%;
+  margin-top: 35%;
+}
+.text01{
+  width:100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color:#969696;
+  padding: 20px 0;
+}
+.text-btn a{
+  display: block;
+  width:20%;
+  text-align:center;
+  padding:5px 15px;
+  border:1px solid #b5b5b5;
+  border-radius:5px;
+  color:#333;
+}
+
+
+/*===============订单=========================*/
+
+div.check{
+  width:20%;
+  float: left;
+}
+.check span{
+  display:inline-block;
+  width:18px;
+  height:18px;
+  border:1px solid #84868a;
+  border-radius:9px;
+
+}
+.part-ri{
+  width:80%;
+  float:right;
+}
+.ord{
+  height:200px;
+  width:100%;
+}
+
+/*==============我的收藏================*/
+
+.shopcar-coll-map {
+    width: 18%;
+    /*margin-top: 35%;*/
+}
+.coll-text01 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.925rem;
+    color: #969696;
+    padding: 20px 0 3px 0;
+}
+.coll-text02 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.925rem;
+    color: #969696;
+    padding: 3px 0 25px 0;
+}
+.coll-text-btn a {
+    display: block;
+    width: 20%;
+    text-align: center;
+    padding: 7px 15px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    background-color: #a2a2a2;
+    color: #fff;
+}
+div.check-true12-a>span {
+    background: url(../img/goods/gx-red.png) no-repeat center;
+    background-size: 16px;
+    border: 1px solid #ff4063;
+}
+
+/*============客服中心==========*/
+.shopcar-service-map {
+    width: 25%;
+    margin-top: 25%;
+}
+.service-text01 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.925rem;
+    color: #969696;
+    padding: 20px 0 3px 0;
+}
+.service-text02 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.925rem;
+    color: #969696;
+    padding: 3px 0 18px 0;
+}
+.kefu-wrap p{
+  text-align: center;
+  line-height: 26px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+

@@ -1,0 +1,235 @@
+body {
+    background-color: #f6f6f6;
+}
+.in_header {
+    position: relative;
+}
+/*3000*/
+.in_header_content {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 3.2rem;
+    background-color: #392d21;
+    color: #ffffff;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 47%;
+}
+.in_header_content .in_header_con {
+    display: inline-block;
+}
+
+/*time*/
+.in_header_time {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 25px;
+}
+.in_header_time .time_con {
+    display: inline-block;
+    width: 4%;
+    height: 100%;
+    background-image: url("../../dist/img/timeBg.png");
+    background-size: 100%;
+    font-size: 0.625rem;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    text-align: center;
+    padding-top: 0.2rem;
+    box-sizing: border-box;
+}
+.in_header_time .time_con_red {
+    display: inline-block;
+    width: 4%;
+    height: 100%;
+    text-align: center;
+    background-image: url("../../dist/img/timeBgRed.png");
+    background-size: 100%;
+    font-size: 0.625rem;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    padding-top: 0.2rem;
+    box-sizing: border-box;
+}
+.time_con_mr {
+    margin-left: 4rem;
+}
+.in_header_time .time_date {
+    display: inline-block;
+    width: 4%;
+    color: #ffffff;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.625rem;
+}
+
+
+/*劵*/
+.cuppon {
+    position: relative;
+}
+.cuppon_num {
+    font-family: Arial;
+    font-size: 3rem;
+    color: #ffffff;
+    position: absolute;
+    left:37%;
+    top: 0.8rem;
+}
+.take_cuppon {
+    position: absolute;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.625rem;
+    right: 1rem;
+    top: 35%;
+    height: 22px;
+    line-height: 1.4rem;
+    background-color: #ffffff;
+    border-radius: 0.7rem;
+    width: 18%;
+    padding-left: 0.5rem;
+}
+.cuppon .triangle {
+    display: inline-block;
+    width: 1.5%;
+    height: 6px;
+    position: absolute;
+    top: 45%;
+    right: 6%;
+}
+
+/*host begin*/
+.in_hotest {
+    overflow: auto;zoom: 1;
+    margin-top: 0.5rem;
+}
+.in_hotest_left {
+    width: 49%;
+    float: left;
+    margin-right: 0.2rem;
+    position: relative;
+}
+.in_hotest_right {
+    width: 49%;
+    float: right;
+}
+.in_hotest_right_top {
+    position: relative;
+}
+.in_hotest_right .in_hotest_right_bottom {
+    margin-top: 0.3rem;
+    position: relative;
+}
+.hot_left_text {
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    left: 3rem;
+}
+.hot_left_text_top {
+    font-family: "思源宋体 CN";
+    font-size: 1.3rem;
+}
+.hot_left_text_bot {
+    font-family: Arial;
+    font-size: 0.3rem;
+}
+
+.hot_right_text {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+}
+.hot_right_text_top {
+    font-family: "思源宋体 CN";
+    font-size: 1.3rem;
+}
+.hot_right_text_bot {
+    font-family: Arial;
+    font-size: 0.3rem;
+}
+
+/*in_shop*/
+.in_shop_img {
+    position: relative;
+}
+.in_shop_img .shop_end {
+    position: absolute;
+    background-image: url("../../dist/img/endBg.png");
+    background-size: 100%;
+    height: 18%;
+    width: 50%;
+    right: 0;
+    z-index: 10;
+    top: 1rem;
+    overflow: auto;zoom: 1;
+}
+
+.shop_end_text {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #ffffff;
+    position: absolute;
+    left: 11%;
+    padding-top: 0.5rem;
+}
+.shop_end_time {
+    position: absolute;
+    right: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.shop_end_time .shop_end_time_num{
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    font-size: 0.625rem;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+.shop_end_time .shop_end_time_mir {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.625rem;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+.in_shp_mes {
+    position: relative;
+    background-color: #ffffff;
+    padding-top: 0.8rem;
+}
+
+.in_shp_mes_tops {
+    padding-left: 0.8rem;
+}
+
+.in_shp_mes .in_shop_mes_top {
+    display: inline-block;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.in_shp_mes_bots {
+    padding-left: 0.8rem;
+    margin-top: 0.3rem;
+}
+.in_shp_mes_bots .in_shop_mes_bot {
+    display: inline-block;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.625rem;
+    color: #636363;
+}
+.in_shp_mes .quikly {
+    position: absolute;
+    width: 25%;
+    height: 23px;
+    background-color: #fe4365;
+    color: #ffffff;
+    font-size: 0.9rem;
+    display: block;
+    border-radius: 5px;
+    right: 0.5rem;
+    top: 40%;
+    text-align: center;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>全部订单</title>
+    <!-- <link rel="stylesheet" href="../../dist/css/x_index.css"> -->
+    <link rel="stylesheet" href="../../dist/css/x_order.css">
+    <link rel="stylesheet" href="../../dist/css/x_cen_orderall.css">
+    <link rel="stylesheet" href="../../dist/css/foot.css">
+    <script src="../../dist/js/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../../dist/js/p_center.js"></script>
+    <style>
+        html{
+            background-color: #f7f7f7;
+        }
+        .content{
+            padding-top: 19%;
+        }
+    </style>
+</head>
+<body>
+    <div class="myord-nav">
+        <ul>
+            <li class="all col000">
+                <p>全部</p>
+                <p>（0）</p>
+                <p class="und-line"></p>
+            </li>
+            <li class="pay">
+                <p>未支付</p>
+                <p>（0）</p>
+                <p class="und-line" style="display:none;"></p>
+            </li>
+            <li class="paid">
+                <p>待发货</p>
+                <p>（0）</p>
+                <p class="und-line" style="display:none;"></p>
+            </li>
+            <li class="receipt">
+                <p>待收货</p>
+                <p>（0）</p>
+                <p class="und-line" style="display:none;"></p>
+            </li>
+            <li class="evaluate">
+                <p>待评价</p>
+                <p>（0）</p>
+                <p class="und-line" style="display:none;"></p>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="cen-ord-all">
+            <div class="ord-box cen-pay">
+                <div class="ord">
+                    <div class="check check-good"><span></span></div>
+
+                    <div class="part-ri">
+                        <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                        <div class="p-txt">
+                            <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                            <p>￥<span>170.00</span></p>
+                            <p>待支付</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cen-price">
+                    <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                    <p>共计：￥<span>1721.00</span></p>
+                </div>
+                <div class="cen-btn">
+                    <p>取消订单</p>
+                    <p>付&nbsp;款</p>
+                </div>
+            </div>
+
+            <div class="ord-box cen-paid">
+                <div class="ord">
+                    <div class="part-ri">
+                        <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                        <div class="p-txt">
+                            <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                            <p>￥<span>170.00</span></p>
+                            <p>待发货</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cen-price">
+                    <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                    <p>共计：￥<span>1721.00</span></p>
+                </div>
+                <div class="cen-btn">
+                    <p>查看物流</p>
+                    <p>提醒发货</p>
+                </div>
+            </div>
+
+            <div class="ord-box cen-receipt">
+                <div class="ord">
+                    <div class="part-ri">
+                        <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                        <div class="p-txt">
+                            <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                            <p>￥<span>170.00</span></p>
+                            <p>待收货</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cen-price">
+                    <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                    <p>共计：￥<span>1721.00</span></p>
+                </div>
+                <div class="cen-btn">
+                    <p>查看物流</p>
+                    <p>确认收货</p>
+                </div>
+            </div>
+
+            <div class="ord-box cen-evaluate">
+                <div class="ord">
+                    <div class="part-ri">
+                        <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                        <div class="p-txt">
+                            <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                            <p>￥<span>170.00</span></p>
+                            <p>待评价</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cen-price">
+                    <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                    <p>共计：￥<span>1721.00</span></p>
+                </div>
+                <div class="cen-btn">
+                    <p>查看物流</p>
+                    <p>评&nbsp;价</p>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="cen-ord-pay" style="display:none;">
+                <div class="ord-box cen-pay">
+                    <div class="ord">
+                        <div class="check check-good"><span></span></div>
+
+                        <div class="part-ri">
+                            <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                            <div class="p-txt">
+                                <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                                <p>￥<span>170.00</span></p>
+                                <p>待支付</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cen-price">
+                        <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                        <p>共计：￥<span>1721.00</span></p>
+                    </div>
+                    <div class="cen-btn">
+                        <p>取消订单</p>
+                        <p>付&nbsp;款</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cen-ord-paid" style="display:none;">
+
+                <div class="ord-box cen-paid">
+                    <div class="ord">
+                        <div class="part-ri">
+                            <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                            <div class="p-txt">
+                                <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                                <p>￥<span>170.00</span></p>
+                                <p>待发货</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cen-price">
+                        <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                        <p>共计：￥<span>1721.00</span></p>
+                    </div>
+                    <div class="cen-btn">
+                        <p>查看物流</p>
+                        <p>提醒发货</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cen-ord-receipt" style="display:none;">
+                <div class="ord-box cen-receipt">
+                    <div class="ord">
+                        <div class="part-ri">
+                            <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                            <div class="p-txt">
+                                <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                                <p>￥<span>170.00</span></p>
+                                <p>待收货</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cen-price">
+                        <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                        <p>共计：￥<span>1721.00</span></p>
+                    </div>
+                    <div class="cen-btn">
+                        <p>查看物流</p>
+                        <p>确认收货</p>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="cen-ord-evaluate" style="display:none;">
+
+                <div class="ord-box cen-evaluate">
+                    <div class="ord">
+                        <div class="part-ri">
+                            <div class="p-img"><img src="../../dist/img/goods/ord2_03.png" alt=""></div>
+                            <div class="p-txt">
+                                <p>2017秋冬新款女装合身绑带饰领口荷叶摆H型连衣裙WH23R7BN2000</p>
+                                <p>￥<span>170.00</span></p>
+                                <p>待评价</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cen-price">
+                        <p>共 <span>10</span> 件(含运费：￥<span>21</span>)</p>
+                        <p>共计：￥<span>1721.00</span></p>
+                    </div>
+                    <div class="cen-btn">
+                        <p>查看物流</p>
+                        <p>评&nbsp;价</p>
+                    </div>
+                </div>
+            </div>
+
+
+    <div class="settle">
+        <div class="check check-all"><span></span>全选</div>
+        <div class="set-all">
+            <p>合计：<span>￥</span><span class="total-all">0</span></p>
+            <p class="no-freight">含运费</p>
+        </div>
+        <div class="set-btn disabled">合并结算</div>
+    </div>
+    <!-- <div class="content">
+        <div class="shopcar-coll-map">
+            <img src="../../dist/img/goods/coll-01.png" alt="">
+        </div>
+        <p class="coll-text01">你还未收藏过掌柜平台的商品</p>
+        <p class="coll-text02">快去商城找寻吧</p>
+        <p class="coll-text-btn"><a href="">前去商城</a></p>
+    </div> -->
+    <!-- <footer>
+        <div class="foot">
+            <div class="ul">
+                <a href="" class="li">商城首页</a>
+                <a href="" class="li">商品分类</a>
+                <a href="" class="li activ">进货订单</a>
+                <a href="" class="li">个人中心</a>
+            </ul>
+        </div>
+    </footer> -->
+</body>
+
+</html>

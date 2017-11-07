@@ -1,0 +1,143 @@
+
+
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+  cursor:pointer;
+
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.content{
+  padding-bottom: 10rem;
+}
+
+
+.add-adr{
+  box-sizing:border-box;
+  width: 100%;
+  padding: 4% 5%;
+  background-color: #fff;
+  border-bottom:1px solid #e0e0e0; 
+}
+.add-adr:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.add-adr>div{
+  box-sizing:border-box;
+  width: 50%;
+  float: left;
+}
+.add-adr>div.addr-img{
+  width: 7%;
+  float: right;
+}
+.people:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.people{
+  box-sizing:border-box;
+  width: 100%;
+  padding: 4% 5% 1% 16%;
+  border-top:1px solid #e0e0e0; 
+  border-bottom:1px solid #e0e0e0; 
+  background: url("../img/goods/dinwei.png") no-repeat;
+  background-size: 8%;
+  background-position: 5% 40%;
+  background-color: #fff;
+  margin-top: 3%;
+
+}
+
+.p-right>div{
+  margin-bottom: 2%;
+  width: 100%;
+}
+.p-right .a:after,.p-right .c:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.p-right .a p{
+  float: left;
+  font-size: 0.85rem;
+  color: #333;
+}
+.p-right .a p:last-child{
+  float: right;
+}
+.p-right .b{
+  font-size: 0.75rem;
+  color: #969696;
+}
+.p-right .c p.mo{
+  float: left;
+  font-size: 0.75rem;
+  color: #fff;
+  background-color: #c9bea2;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.p-right .c p.edit{
+  float: right;
+  font-size: 0.825rem;
+  color: #969696;
+  background: url("../img/goods/bj.png") no-repeat;
+  background-size: 30%;
+  padding-left: 20px;
+}
+
+
+/*=============个人中心地址页===============*/
+.content01{
+  padding-bottom:5rem; 
+}
+.p-right .c p.delete {
+    float: right;
+    font-size: 0.825rem;
+    color: #969696;
+    background: url(../img/goods/delete-icon.png) no-repeat;
+    background-size: 34%;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+.center-add-adr {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    background-color:#000;
+    position: fixed;
+    bottom: 0;
+}
+.center-add-adr .adress{
+    background: url(../img/goods/add-01.png) no-repeat center;
+    background-size: 1.45rem;
+    background-position: 33% 53%;
+    padding: 4% 5%;
+    text-align: center;
+    color: #fff;
+
+    /*align-items: center;
+  display: -webkit-flex;*/
+}

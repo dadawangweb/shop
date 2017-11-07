@@ -1,0 +1,66 @@
+.bussiness_img {
+    background-color: #ffffff;
+    overflow: auto; zoom: 1;
+    margin-bottom: 0.6rem;
+}
+.bussiness_img .bussiness_img_border {
+    display: inline-block;
+    width: 65%;
+    height: 164px;
+    background-color: #ebebeb;
+    margin: 0.25rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+/*去除边框*/
+.bussiness_img .bussiness_img_left {
+    display: inline-block;
+    width: 100%;
+}
+.bussiness_img .bussiness_img_right {
+    width: 30%;
+    text-align: center;
+    float: right;
+    position: relative;
+}
+img[src=""] {
+    opacity: 0;
+}
+
+.bussiness_img_right .please {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.875rem;
+}
+
+.bussiness_img_right .pic {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+.img_plus {
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 2.25rem;
+}
+
+.per-password-bot .per-word-bot input {
+    border: none;
+    border-left: 1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+    height: 54px;
+    width: 100%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+}
+.fileUp {
+    width: 54%;
+    height: 64px;
+    margin-top: 2.25rem;
+    position: absolute;
+    cursor: pointer;
+    outline: medium none;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}

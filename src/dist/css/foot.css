@@ -1,0 +1,71 @@
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 102;
+}
+.foot{
+  width: 100%;
+}
+.foot .ul{
+  width: 100%;
+  font-size:0px;
+  height: 3rem;
+  z-index: 1;
+  padding-top: 5px;
+  border-top: 1px solid #cacbcc;
+  background-color: #fff;
+}
+.foot .ul .li {
+  width: 25%;
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 1.8rem 0 0 0;
+  text-align: center;
+  color: #b5b5b5;
+}
+
+.foot .ul .li:nth-child(1){
+  background: url("../img/nav/index-icon.png") no-repeat center top;
+  background-size: 1.8rem;
+}
+.foot .ul .li:nth-child(1).activ{
+  background: url("../img/nav/index-icon01.png") no-repeat center top;
+  background-size: 1.8rem;
+  color: #000;
+}
+.foot .ul .li:nth-child(2){
+  background: url("../img/nav/goods-icon.png") no-repeat center top;
+  background-size: 1.8rem;
+}
+.foot .ul .li:nth-child(2).activ{
+  background: url("../img/nav/goods-icon01.png") no-repeat center top;
+  background-size: 1.8rem;
+  color: #000;
+}
+.foot .ul .li:nth-child(3){
+  background: url("../img/nav/order-icon.png") no-repeat center top;
+  background-size: 1.8rem;
+}.foot .ul .li:nth-child(3).activ{
+  background: url("../img/nav/order-icon01.png") no-repeat center top;
+  background-size: 1.8rem;
+  color: #000;
+}
+.foot .ul .li:nth-child(4){
+  background: url("../img/nav/center-icon.png") no-repeat center top;
+  background-size: 1.8rem;
+}
+.foot .ul .li:nth-child(4).activ{
+  background: url("../img/nav/center-icon01.png") no-repeat center top;
+  background-size: 1.8rem;
+  color: #000;
+}
+

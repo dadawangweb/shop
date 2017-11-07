@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../dist/css/d-common.css">
+    <link rel="stylesheet" href="../../dist/css/loginFirst.css">
+    <script src="../../dist/js/plugins/jQuery/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="fir-header">
+        <div>系统已检测你的帐号已注册</div>
+        <div>请设置你的登录密码</div>
+    </div>
+</header>
+<section>
+    <form id="loginFirstForm">
+        <div class="fir-password">
+            <div class="fir-word">
+                <img src="../../dist/img/input/password.png">
+                <div class="box"></div>
+                <input type="password" name="" placeholder="请设置你的密码">
+            </div>
+            <div class="fir-word">
+                <img src="../../dist/img/input/password.png">
+                <div class="box"></div>
+                <input type="password" name="" placeholder="请再一次输入密码">
+            </div>
+        </div>
+        <div class="mrt2rem">
+            <button class="fir-button">立即登录</button>
+        </div>
+    </form>
+</section>
+</body>
+<script>
+    jQuery(function () {
+
+//        点击登录
+        $('.fir-button').on("click",function(){
+            $.ajax({
+                url:"",
+                type:"POST",
+                dataType:"JSON",
+                data:$("#loginFirstForm").serialize(),
+                success:function(data){
+                    if(data.result){
+                       window.location.href = "index.html";
+                    }else{
+
+                    }
+                }
+            });
+        });
+
+    })
+</script>
+</html>

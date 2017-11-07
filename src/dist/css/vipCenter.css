@@ -1,0 +1,212 @@
+body {
+    background-color: #f7f7f7;
+}
+.vip-header {
+    background-image: url("../../dist/img/vipHeaderBg.png");
+    overflow: hidden;zoom: 1;
+}
+.vip-header-img {
+    width: 19%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 6%;
+    float: left;
+    border: 2px solid #8c8b89;
+    border-radius: 50%;
+}
+
+.vip-header-right {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    float: right;
+    width: 72%;
+    padding-top: 9%;
+    position: relative;
+}
+
+.vip-header-right .vip-name {
+    font-size: 1.125rem;
+}
+.vip-header-right .vip-recog {
+    width: 36%;
+    margin-top: 2%;
+    color: #8c8b89;
+    border: 1px solid #8c8b89;
+    border-radius: 1rem;
+    font-size: 0.625rem;
+    text-align: center;
+    float: left;
+}
+
+.personal-set {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    right: 5%;
+    font-size: 0.625rem;
+    color: #8c8b89;
+}
+.personal-set .mid {
+    color: #8c8b89;
+    font-size: 0.75rem;
+}
+
+.personal-set img {
+    display: inline-block;
+    position: absolute;
+    width: 13%;
+    right: -2%;
+    top: 0;
+}
+
+.section-one ul {
+    background-color: #ffffff;
+}
+.section-one ul li {
+    position: relative;
+}
+.section-one-link {
+    display: inline-block;
+    width: 100%;
+}
+.section-one ul li img {
+    position: absolute;
+    width: 4%;
+    right: 5%;
+    top: 40%;
+}
+.section-one ul li{
+    display: inline-block;
+    width: 49%;
+}
+.section-one .section-one-reg{
+    font-size: 0.875rem;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.section-one .section-one-send {
+    font-size: 0.625rem;
+    padding-left: 5%;
+    padding-top: 2%;
+    color: #8c8b89;
+}
+.section-one .hot {
+    width: 15%;
+    height: 13px;
+    position: absolute;
+    left: 3%;
+    top: 29%;
+}
+
+
+.section-two {
+    margin-top: 5%;
+    background-color: #ffffff;
+}
+.section-two ul li {
+    width: 49%;
+    display: inline-block;
+    padding: 2%;
+    box-sizing: border-box;
+    position: relative;
+}
+.section-two .order {
+    width: 11%;
+    top: 30%;
+    display: inline-block;
+    left: 10%;
+    position: absolute;
+}
+
+.section-two .jiantou {
+    position: absolute;
+    right: 5%;
+    width: 4%;
+    display: inline-block;
+    top: 35%;
+}
+.section-two .section-two-ding {
+    font-size: 0.875rem;
+    margin: 4.5%;
+    display: inline-block;
+    margin-left: 22%;
+}
+.section-two .section-two-a {
+    display: inline-block;
+    /*margin-right: 5%;*/
+    margin-left: 55%;
+}
+.section-two .section-two-all {
+    font-size: 0.75rem;
+    height: 20px;
+    color: #cfcfcf;
+    display: inline-block;
+    float: right;
+    position: absolute;
+    margin: 4.5%;
+    top: 10%;
+}
+
+.section-three{
+    background-color: #ffffff;
+    border-top: 1px solid #cfcfcf;
+}
+.section-three ul li {
+    border: none;
+    display: inline-block;
+    width: 17.8%;
+}
+.section-three a {
+    display: inline-block;
+    margin-left: 15%;
+}
+.section-three img {
+    width: 42%;
+    margin-top: 20%;
+}
+.section-three ul li div {
+    font-size: 0.625rem;
+    color: #cfcfcf;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+.section-four {
+    margin-top: 5%;
+}
+.section-four ul li {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cfcfcf;
+    overflow: hidden;zoom: 1;
+    position: relative;
+}
+.section-four .section-four-icon {
+    width: 5%;
+    top: 30%;
+    display: inline-block;
+    left: 5%;
+    position: absolute;
+}
+.section-four .extra {
+    display: inline-block;
+    float: right;
+    font-size: 0.625rem;
+    color: #cfcfcf;
+    position: absolute;
+    margin: 4.5%;
+    right: 4%;
+}
+.section-four .section-four-con {
+    font-size: 0.875rem;
+    margin: 3.5%;
+    display: inline-block;
+    margin-left: 13%;
+}
+.section-four-jiantou {
+    position: absolute;
+    right: 3%;
+    width: 2%;
+    display: inline-block;
+    top: 35%;
+}

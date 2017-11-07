@@ -1,0 +1,46 @@
+body {
+    background-color: #f6f6f6;
+}
+.fir-header {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*input password*/
+.fir-password input{
+    border-top: none;
+    border-left: 1px solid #f9f9f9;
+    height: 54px;
+    width: 100%;
+    padding-left: 4.75rem;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    border-width: 1px;
+}
+
+.fir-password .fir-word {
+    position: relative;
+}
+
+.fir-word img {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    width: 4.5%;
+}
+/*input password end*/
+
+.fir-button {
+    width: 80%;
+    height: 50px;
+    background-color: #c9c9c9;
+    margin: 0 auto;
+    color: #ffffff;
+    display: block;
+    border-radius: 0.325rem;
+    border: none;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>店铺注册</title>
+    <link rel="stylesheet" href="../../dist/css/d-common.css">
+    <link rel="stylesheet" href="../../dist/css/personalReg.css">
+    <link rel="stylesheet" href="../../dist/css/businessReg.css">
+    <link rel="stylesheet" href="../../dist/css/busShopReg.css">
+    <script src="../../dist/js/plugins/jQuery/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="per-header color">
+        <div class="per-header-center">
+            <div>完成店铺升级可获得</div>
+            <div>100</div>
+            <div>现金抵用卷</div>
+        </div>
+    </div>
+</header>
+<section>
+    <form>
+        <div class="shop-phone-check">
+            <div class="per-word">
+                <img src="../../dist/img/input/phone.png">
+                <div class="box"></div>
+                <input type="number"  name="" placeholder="请输入店主手机号">
+            </div>
+            <input type="number"  name="" placeholder="请输入短信验证码">
+            <div class="shop-time">
+                <span class="per_interval_time">60</span>
+                <span>s后重发</span>
+            </div>
+        </div>
+        <div class="per-password">
+            <div class="per-word">
+                <img src="../../dist/img/input/receiver.png">
+                <div class="box"></div>
+                <input type="text" name="" placeholder="请输入收货人姓名">
+            </div>
+            <div class="per-word">
+                <img src="../../dist/img/input/address.png">
+                <div class="box"></div>
+                <input type="text" name="" placeholder="请输入收货人地址">
+            </div>
+        </div>
+        <div  class="bussiness_img mrt2rem">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="busFront" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="busFront" class="fileUp" onchange="showPreviewbusFront(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">店铺正面照片</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="busLicense" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewbusLicense(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">工商营业执照</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="cardFront" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewcardFront(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">法人身份证正面</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="cardNeg" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewcardNeg(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">法人身份证反面</div>
+            </div>
+        </div>
+        <div class="pre-button mrtrem mrb6rem">
+            <button class="pre-reg-button pre-reg-color">升级成店铺</button>
+        </div>
+    </form>
+</section>
+</body>
+<script>
+    function showPreviewbusFront(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('busFront');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+    function showPreviewbusLicense(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('busLicense');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+    function showPreviewcardFront(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('cardFront');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+    function showPreviewcardNeg(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('cardNeg');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+
+
+    $(function () {
+        var INTERVARTIME = 1000;
+//        radio
+        $('.box-radio').wrap('<div class="radio"><i></i></div>');
+        $(".radio").on('click', function () {
+            var _this = $(this),
+                    block = _this.parent().parent();
+            block.find('input:radio').attr('checked', false);
+            block.find(".radio").removeClass('checkedRadio');
+            _this.addClass('checkedRadio');
+            _this.find('input:radio').attr('checked', true);
+        });
+
+//      手机倒计时
+        function countdown() {
+            var time = $('.per_interval_time').text();
+
+            var interval = window.setInterval(function () {
+                time = time - 1;
+                $('.per_interval_time').text(time);
+                if(time == 0) {
+                    window.clearInterval(interval);
+                }
+            }, INTERVARTIME);
+        }
+        countdown();
+
+
+    });
+</script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>注册</title>
+    <link rel="stylesheet" href="../../dist/css/d-common.css">
+    <link rel="stylesheet" href="../../dist/css/personalReg.css">
+    <link rel="stylesheet" href="../../dist/css/businessReg.css">
+    <script src="../../dist/js/plugins/jQuery/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="per-header">
+        <div class="per-header-center">
+            <div>审核通过可获得</div>
+            <div>1.00</div>
+            <div>元新店铺礼券</div>
+        </div>
+    </div>
+</header>
+<section>
+    <form>
+        <div class="per-phone-check">
+            <input type="number"  name="" placeholder="请输入短信验证码">
+            <div class="per-time">
+                <span class="per_interval_time">60</span>
+                <span>s后重发</span>
+            </div>
+        </div>
+        <div class="per-password">
+            <div class="per-word">
+                <img src="../../dist/img/input/password.png">
+                <div class="box"></div>
+                <input type="password" name="" placeholder="请输入密码">
+            </div>
+            <div class="per-word">
+                <img src="../../dist/img/input/password.png">
+                <div class="box"></div>
+                <input type="password" name="" placeholder="请再一次输入密码">
+            </div>
+        </div>
+        <div class="per-radio">
+            <ul>
+                <li class="first">
+                    <input type="radio" name="radio-btn" class="box-radio">
+                    <span class="text">个人</span>
+                </li>
+                <li class="second">
+                    <input type="radio" name="radio-btn" class="box-radio">
+                    <span class="text">店铺</span>
+                </li>
+            </ul>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left"  id="busFront" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="busFront" class="fileUp" onchange="showPreviewbusFront(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">店铺正面照片</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="busLicense" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewbusLicense(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">工商营业执照</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left"  id="cardFront" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewcardFront(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">法人身份证正面</div>
+            </div>
+        </div>
+        <div  class="bussiness_img">
+            <div class="bussiness_img_border">
+                <img class="bussiness_img_left" id="cardNeg" src="">
+            </div>
+            <div class="bussiness_img_right">
+                <input type="file" name="" class="fileUp" onchange="showPreviewcardNeg(this)">
+                <img class="img_plus" src="../../dist/img/img_plus.png">
+                <div class="please">请上传</div>
+                <div class="pic">法人身份证反面</div>
+            </div>
+        </div>
+        <div class="per-password-bot">
+            <div class="per-word-bot">
+                <input type="password" name="" placeholder="请填写收货人姓名">
+            </div>
+            <div class="per-word-bot">
+                <input type="password" name="" placeholder="请填写收获地址">
+            </div>
+        </div>
+        <div class="pre-button mrtrem mrb6rem">
+            <button class="pre-reg-button">完成注册</button>
+                <span class="pre-pro">
+                    <a href="#">注册表示同意掌柜的《用户协议》</a>
+                </span>
+        </div>
+    </form>
+</section>
+</body>
+<script>
+    function showPreviewbusFront(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('busFront');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+
+    function showPreviewbusLicense(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('busLicense');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+    function showPreviewcardFront(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('cardFront');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+    function showPreviewcardNeg(source) {
+        var file = source.files[0];
+        if(window.FileReader) {
+            var fr = new FileReader();
+            var portrait = document.getElementById('cardNeg');
+            fr.onloadend = function(e) {
+                portrait.src = e.target.result;
+            };
+            fr.readAsDataURL(file);
+            portrait.style.display = 'block';
+        }
+    }
+
+    $(function () {
+//        radio
+        var INTERVARTIME = 1000;
+
+        $('.box-radio').wrap('<div class="radio"><i></i></div>');
+        $(".radio").on('click', function () {
+            var _this = $(this),
+                    block = _this.parent().parent();
+            block.find('input:radio').attr('checked', false);
+            block.find(".radio").removeClass('checkedRadio');
+            _this.addClass('checkedRadio');
+            _this.find('input:radio').attr('checked', true);
+        });
+
+// 手机倒计时
+        function countdown() {
+            var time = $('.per_interval_time').text();
+
+            var interval = window.setInterval(function () {
+                time = time - 1;
+                $('.per_interval_time').text(time);
+                if(time == 0) {
+                    window.clearInterval(interval);
+                }
+            }, INTERVARTIME);
+        }
+        countdown();
+
+    });
+</script>
+</html>
