@@ -43,11 +43,11 @@
 .cuppon-form {
     position: absolute;
     top: 70%;
-    width: 100%;
+    width: 70%;
 }
 .cuppon-form input {
     height: 24px;
-    width: 53%;
+    width: 83%;
     font-size: 0.625rem;
     margin-left: 8%;
     border: 1px solid #e5e5e5;
